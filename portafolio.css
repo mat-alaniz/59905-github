@@ -1,0 +1,314 @@
+/*letra de b.nav*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/*letra d h2 nombre*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/*letra de h3*/
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Poetsen+One&family=Sedan+SC&display=swap");
+/*letra de p*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.padre {
+  height: 100vh; /*ver height alto*/
+  width: 100%; /*ver width ancho*/
+  margin: auto;
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: rgba(64, 64, 97, 0.851);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.encabezado .bnav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.encabezado .bnav a {
+  text-decoration: none;
+  margin-right: 70px;
+  color: white;
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgb(33, 33, 33, 0.851) 50%,
+    rgb(47, 98, 209) 50%
+  );
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: background-position 1s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 8px -5px rgb(255, 255, 255);
+}
+.encabezado .bnav a:hover {
+  background-position: right;
+  box-shadow: none;
+}
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(166, 212, 255);
+  padding: 380px;
+  margin: 0;
+  position: relative;
+}
+.presentacion h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  text-shadow: 0 2px 5px rgb(0, 0, 0);
+  font-size: 70px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: rgb(47, 98, 209);
+}
+.presentacion p {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 28px;
+  position: relative;
+  right: 250px;
+  top: -110px;
+  color: black;
+}
+.foto {
+  display: flex;
+  position: absolute;
+  top: 180px;
+  left: 60%;
+}
+.foto img {
+  width: 450px;
+  position: relative;
+  left: 5px;
+  border-radius: 40px;
+  box-shadow: 1px 3px 11px -5px rgb(255, 255, 255);
+}
+.presentacion a {
+  position: absolute;
+  top: 61%;
+  left: 24%;
+  text-decoration: none;
+  margin-right: 70px;
+  color: white;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    rgb(33, 33, 33, 0.851) 50%,
+    rgb(47, 98, 209) 50%
+  );
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: background-position 1s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 3px 11px -5px rgb(255, 255, 255);
+}
+.presentacion a:hover {
+  background-position: right;
+  box-shadow: none;
+}
+.misconocimientos {
+  background-color: #ff5e8b;
+  padding: 15px 9%;
+  padding-bottom: 100px;
+  position: relative;
+}
+.misconocimientos .titulo {
+  text-align: center;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #000000;
+  text-shadow: 0px 1px 10px rgb(255, 255, 255);
+}
+
+.misconocimientos .box-contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.misconocimientos .box {
+  background-color: #c70039;
+  width: 300px;
+  height: 380px;
+  margin: 50px;
+  border-radius: 15px;
+  position: relative;
+  top: 0px;
+  right: 150px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.misconocimientos .box:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6%);
+}
+
+.misconocimientos .box img {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+}
+.misconocimientos .box h3 {
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  color: #000000;
+}
+
+.frase {
+  width: 100%;
+  height: 750px;
+  background-color: #ff8d47;
+}
+
+.frase img {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  top: 140px;
+  left: 350px;
+}
+.boton {
+  text-decoration: none;
+  margin-right: 70px;
+  color: white;
+  font-size: 17px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgba(1, 1, 1, 0.851) 50%,
+    rgb(47, 209, 117) 50%
+  );
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: background-position 1s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 8px -5px rgb(255, 255, 255);
+}
+.boton:hover {
+  background-position: right;
+  box-shadow: none;
+}
+form label{
+  display: inline-block;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+form .form-group{
+  margin-bottom: 16px;
+
+}
+form .form-control{
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 4px;
+}
+.contact{
+  padding: 90px 0;
+  background-color: #c0e218;
+}
+.contact-form{
+  background: #9ab512;
+  width: 40%;
+  margin: 20px auto;
+  padding: 40px 40px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.misproyectos{
+  width: 100%;
+  height: 800px;
+padding: 90px 0;
+background: #60ff21;
+}
+.misproyectos h2{
+ padding-bottom: 50px;
+ text-align: center;
+ font-family: "Sedan SC", serif;
+ font-weight: 400;
+ font-style: normal;
+ font-size: 50px;
+ text-align: center;
+}
+.portafolio-row{
+  display: flex;
+  justify-content: space-between;
+}
+.portafolio-row-box{
+  margin: 10px;
+  background: #348f00;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  cursor:pointer;
+}
+.portafolio-row-box:hover{
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 1);
+  transform: translateY(-6%);
+}
+
+.portafolio-row-box p{
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+}
+.portafolio-row-box img{
+  width: 300px;
+  height: 200px;
+}
+.footer{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background-color: #d8ff15;
+  padding: 10px;
+  margin-top: 0;
+}
